@@ -8,7 +8,13 @@ namespace num8
 {
     abstract class Software
     {
+        string name;
+        public string Name { get; set; }
+        public Software(string name)
+        {
+            Name = name;
+        }
         public abstract void Print();
-
+        public abstract bool IsUsable();  
     }
 }
